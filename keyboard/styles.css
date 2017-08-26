@@ -1,0 +1,145 @@
+body{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#title {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 6em;
+  width: 100%;
+}
+
+#content {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5em;
+    border-bottom: 1px solid black;
+    min-height: 1.2em;
+    margin-bottom: .5em;
+}
+
+.highlight {
+  color: #4fbc61;
+}
+
+#copy {
+  /*display: inline-block;*/
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3em;
+  color: #bababa;
+  border-radius: 7px;
+  margin-bottom: 1.5em;
+  border: 2px solid #bababa;
+  width: 10em;
+  /*height: 5em;*/
+  text-align: center;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copy:hover {
+  color: #4fbc61;
+  border: 2px solid #4fbc61;
+  cursor: pointer;
+}
+
+#copy:active {
+  color: #91c69a;
+  border: 2px solid #91c69a;
+}
+
+#keyboard {
+  width: 100%;
+  margin-bottom: 1em;
+/*
+  position: fixed;
+  bottom: 100px;
+  display: block;
+*/
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+.keyRow {
+  display: block;
+  display: flex;
+  justify-content: center;
+
+}
+
+.keyButton{
+  height: 75px;
+  min-width: 65px;
+  margin: 4px 2px;
+  border: thin solid #111;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 1px #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  color: black;
+
+
+}
+
+.keyButton, #copy {
+/*So that the key can't be highlighted*/
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer */
+-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+-webkit-user-select: none; /* Chrome, Safari, and Opera */
+-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+#r1 {
+  padding-left: 10px;
+}
+
+.keyButton:hover {
+  box-shadow: 1px 3px 3px #ccc;
+  text-shadow: .5px 1px 1px #aaa;
+  cursor: pointer;
+
+}
+
+.keyButton:active, .clicked {
+  background-color: #ccc;
+  color: black;
+  border: thin solid black;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/*
+.clicked {
+    border: thin solid red;
+}
+*/
+
+#k8 {
+  padding: 0px .8em;
+}
+
+#k16 {
+  padding: 0px 1.2em;
+}
+
+/*#k17 {
+  padding: 0px .8em;
+}*/
+
+#k32 {
+  padding: 0px 8em;
+}

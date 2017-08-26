@@ -1,0 +1,23 @@
+{
+  "name": "twitter-media",
+  "version": "0.1.0",
+  "description": "Library for handling Twitter media uploads",
+  "main": "src/media-upload.js",
+  "keywords": [
+    "twitter",
+    "media",
+    "upload",
+    "video",
+    "image"
+  ],
+  "author": "Jan Zaloudek",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.2.1",
+    "request": "^2.57.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/janzal/twitter-media.git"
+  }
+}

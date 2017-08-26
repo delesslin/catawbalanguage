@@ -1,0 +1,12 @@
+{
+  "name": "catawbagame",
+  "version": "1.0.0",
+  "description": "A game for learning catawba.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node scripts.js"
+  },
+  "author": "DeLesslin George-Warren - Catawba Language Project",
+  "license": "ISC"
+}
